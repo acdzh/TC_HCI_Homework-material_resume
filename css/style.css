@@ -17,7 +17,61 @@ body{
 }
 
 #main{
-    padding-left: 0px
+    padding-left: 0px；
+    background-color: #f0f2f1;
+}
+
+
+.timelineblock {
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background-color: #00796b;
+    float: left;
+    position: absolute;
+    left: -28px;
+    top: 5px;
+}
+
+.subcontent {
+    border-left: 2px solid #00796b;
+    margin-left: 15px;
+}
+
+
+.subcontent > li {
+    position: relative;
+    top: -5px;
+    margin: 0 0 20px 20px;
+}
+
+
+.subcontent ul > li {
+    margin: 0 0 12px 0;
+}
+
+
+.content > li {
+    padding-top: 20px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #00796b;
+    line-height: 30px;
+    border-bottom: 1px solid #00796b;
+    margin: 0 0 15px -5px;
+}
+
+
+h4 {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+h5 {
+    line-height: 25px;
+    font-size: 16px;
 }
 
 #fixed-action-btn{
