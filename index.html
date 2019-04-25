@@ -7,17 +7,60 @@
         <script src="js/materialize.min.js"></script>
         <link rel="stylesheet" href="css/materialize.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.font.im/icon?family=Material+Icons" rel="stylesheet">
     </head>
 <body>
-    <div class="row z-depth-4" id="container" style="background-color: #FFFFFF">
-        <div class="col s12 m3 l3" id="sidebar" style="background-color:bisque"> 
-            <p>dfdf</p>
-        </div>
-    
-        <div class="col s12 m9 l9" id="main" >
-            <p>xfdjikg</p>
+    <ul id="slide-out" class="side-nav fixed"> 
+        <li><div class="userView">
+            <a href="#user"><img class="circle" src="img/face.png"></a>
+            <a href="#!name"><span class="white-text name">张三</span></a>
+            <a href="#!email"><span class="white-text email">jdandturk@sina.com</span></a>
+            </div>
+        </li>
+    </ul>
+    <div id="container" class="z-depth-4" >
+        <div id="main" class="main" >
+            <p>ddfd</p>
+            
         </div>
     </div>
+    <footer>
+        <div class = "fixed-action-btn">
+            <a  href="#" data-activates="slide-out" 
+                class="btn-floating waves-effect waves-light button-collapse" 
+                id="opensidebar">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+    </footer>
 </body>
+
+
+<script>
+var setSidebar = () =>{
+    if(document.body.clientWidth >= 1000){
+        $(".button-collapse").hide();
+        $(".main").css("padding-left", "300px");
+    }
+    else{
+        $(".button-collapse").show();
+        $(".main").css("padding-left", "0px");
+    }  
+}   
+
+// $(document).ready(function(){
+//     $(".button-collapse").sideNav();
+//     setSidebar();
+// });
+
+
+window.onresize = () => setSidebar();
+window.onload = () => {
+    $(".button-collapse").sideNav();
+    setSidebar();
+}
+
+</script>
 </html>
 
