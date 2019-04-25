@@ -12,18 +12,35 @@
 <body>
     <ul id="slide-out" class="side-nav fixed"> 
         <li><div class="userView">
+            <div class="background">
+                <img src="img/face-background.jfif">
+            </div>
             <a href="#user"><img class="circle" src="img/face.png"></a>
-            <a href="#!name"><span class="white-text name">张三</span></a>
-            <a href="#!email"><span class="white-text email">jdandturk@sina.com</span></a>
+            <a href="#!name"><span class="white-text name">李二狗</span></a>
+            <a href="#!email" ><span class="white-text email"> liergou@tongji.edu.cn </span></a>
             </div>
         </li>
-    </ul>
+        <li><a class="subheader">个人信息</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect title" href="#basicinfo"><i class="material-icons">perm_identity</i>基本信息</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">个人经历</a></li>
+        <li><a class="waves-effect title" href="#edubackground"><i class="material-icons">translate</i>教育背景</a></li>
+        <li><a class="waves-effect title" href="#works"><i class="material-icons">business</i>工作经历</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">个人能力</a></li>
+        <li><a class="waves-effect title" href="#ability"><i class="material-icons">dashboard</i>个人能力</a></li>
+        <li><a class="waves-effect title" href="#certificate"><i class="material-icons">class</i>资格证书</a></li>
+        <li><a class="subheader">个人项目</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect title" href="#projects"><i class="material-icons">subject</i>项目经历</a></li>
+        </ul>
     <div id="container" class="z-depth-4" >
-        <div id="main" >
+        <div id="main" class="main">
             <ul class="content">
               <li>
-                <p class="subtitle">基本信息</p class="subtitle">
-                <p><b>姓名:</b>XX</p>
+                <p class="subtitle" id="basicinfo">基本信息</p>
+                <p><b>姓名:</b>李二狗</p>
                 <p><b>性别:</b>男</p>
                 <p><b>出生年月:</b>1999.4</p>
                 <p><b>籍贯:</b>浙江</p>
@@ -32,10 +49,9 @@
                 <p><b>微博:</b> <a href="https://www.baidu.com" target="_blank">链接</a></p>
                 <p><b>知乎:</b> <a href="https://www.baidu.com" target="_blank">链接</a></p>
                 <p><b>GitHub:</b> <a href="https://www.baidu.com" target="_blank">链接</a></p>
-               </p>
               </li>
               <li>
-                <p class="subtitle">教育背景</p class="subtitle">
+                <p class="subtitle" id="edubackground">教育背景</p>
                 <ul class="subcontent">
                   <li>
                     <div class="timelineblock"></div>
@@ -58,7 +74,7 @@
                 </ul>
               </li>
               <li>
-                <p class="subtitle">工作经历</p class="subtitle">
+                <p class="subtitle" id="works">工作经历</p>
                 <ul class="subcontent">
                   <li>
                     <div class="timelineblock"></div>
@@ -77,7 +93,7 @@
                 </ul>
               </li>
               <li>
-                <p class="subtitle">个人能力</p class="subtitle">
+                <p class="subtitle" id="ability">个人能力</p>
                 <ul class="subcontent">
                   <li>
                     <div class="timelineblock"></div>
@@ -103,7 +119,7 @@
                 </ul>
               </li>
               <li>
-                <p class="subtitle">资格证书</p class="subtitle">
+                <p class="subtitle" id="certificate">资格证书</p>
                 <ul class="subcontent">
                     <li>
                       <div class="timelineblock"></div>
@@ -114,7 +130,7 @@
                       <h4>2018.09  高级网络工程师资格证书</h4>
                       </li>
                 </ul>
-                <p class="subtitle">项目经历</p class="subtitle">
+                <p class="subtitle" id="projects">项目经历</p>
                 <ul class="subcontent">
                   <li>
                     <div class="timelineblock"></div>
@@ -130,18 +146,16 @@
                 </ul>
               </li>
             </ul>
-          </div>
         </div>
     </div>
     <footer>
         <div class = "fixed-action-btn">
             <a  href="#" data-activates="slide-out" 
-                class="btn-floating waves-effect waves-light button-collapse" 
+                class="btn-floating btn-large waves-effect waves-light button-collapse" 
                 id="opensidebar">
                 <i class="material-icons">menu</i>
             </a>
         </div>
-
     </footer>
 </body>
 
@@ -150,18 +164,13 @@
 var setSidebar = () =>{
     if(document.body.clientWidth >= 1000){
         $(".button-collapse").hide();
-        $(".main").css("padding-left", "300px");
+        $(".main").css("padding-left", "360px");
     }
     else{
         $(".button-collapse").show();
-        $(".main").css("padding-left", "0px");
+        $(".main").css("padding-left", "50px");
     }  
 }   
-
-// $(document).ready(function(){
-//     $(".button-collapse").sideNav();
-//     setSidebar();
-// });
 
 
 window.onresize = () => setSidebar();

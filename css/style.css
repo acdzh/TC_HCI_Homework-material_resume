@@ -4,20 +4,28 @@ body{
 
 #container{
     background-color: #FFFFFF;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 
 #slide-out{
-    background-color:bisque;
-    margin-top: 1%; 
-    height: 98%;
+    background-color: rgb(250, 239, 224);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%; 
+    height: 90%;
+}
+
+#infotext{
+    color:#000000;
 }
 
 #main{
-    padding-left: 0px；
+    padding-top:10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
     background-color: #f0f2f1;
 }
 
